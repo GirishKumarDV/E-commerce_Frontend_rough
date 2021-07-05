@@ -1,5 +1,17 @@
-footer {
-    width: 100vw;
-    position: fixed;
-    bottom: 0;
+main img {
+    width: 350px;
+    height: 300px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#clothing,
+#shoes,
+#electronics {
+    display: flex;
+    margin: 50px;
+    justify-content: space-around;
 }
