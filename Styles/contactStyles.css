@@ -1,0 +1,140 @@
+#nav-bar {
+    position: relative;
+}
+
+a {
+    color: black;
+}
+
+p {
+    font-weight: 550;
+    margin: 2vh 0;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+#contact h2 {
+    font-weight: 900;
+    margin: 0;
+}
+
+#contact>.office {
+    max-width: 500px;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    margin: 20px 25px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    padding: 20px 25px;
+}
+
+.office .address>a:hover {
+    color: #285AEB;
+    font-weight: 700;
+    transition: color 200ms ease-in-out;
+}
+
+.office .phone>a:hover {
+    color: green;
+    font-size: 1.2em;
+    font-weight: 700;
+    transition: color 500ms ease-in-out;
+    transition: font-size 100ms ease-in-out;
+}
+
+.office .mail>a:hover {
+    color: #D44638;
+    font-size: 1.2em;
+    font-weight: 700;
+    transition: color 500ms ease-in-out;
+    transition: font-size 100ms ease-in-out;
+}
+
+#contact>form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 800px;
+    width: 100%;
+    margin: 20px 25px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.4);
+    padding: 30px 0;
+    border-radius: 8px;
+}
+
+#contact>form>.input-fields {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.input-fields>h2 {
+    padding-bottom: 8px;
+    font-size: 1.8em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#contact>form textarea {
+    margin: 20px 0;
+    width: 100%;
+    height: 150px;
+    border: none;
+    background-color: var(--color-grayish);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.text-and-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-and-submit>label>span {
+    font-size: 0.89em;
+}
+
+#contact>form label {
+    font-weight: 900;
+    color: rgb(190, 140, 50);
+    font-size: 1.1em;
+    margin-top: 8px;
+}
+
+#contact>form input {
+    max-width: 220px;
+    width: 100%;
+    border: none;
+    background-color: var(--color-grayish);
+    padding: 8px;
+    border-radius: 5px;
+    margin: 10px 0 4px 0;
+}
+
+.text-and-submit>#submit {
+    background: var(--color-brown);
+    opacity: 0.8;
+    color: var(--color-yellow);
+    font-weight: 900;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.text-and-submit>#submit:hover {
+    background-color: black;
+    transition: background-color 100ms;
+}
+
+.text-and-submit>#submit:active {
+    background: green;
+    opacity: 0.7;
+}
