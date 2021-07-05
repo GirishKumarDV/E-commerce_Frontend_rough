@@ -1,0 +1,285 @@
+/* Import font */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+/* Global Styles */
+
+
+/* ----------------------------------------- */
+
+:root {
+    --color-yellow: rgb(234, 195, 15);
+    --color-gray: rgb(80, 98, 99);
+    --color-white: rgb(255, 254, 255);
+    --color-grayish: rgb(219, 217, 211);
+    --color-brown: rgb(72, 52, 38);
+    --color-fontBlack: rgb(56, 55, 52);
+    --color-fontGray: rgb(196, 193, 194);
+    --color-yellowShade: rgb(190, 140, 50);
+    background-image: url(../images/backdrop.jpg);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Navbar styles */
+
+
+/* ---------------------------------------------- */
+
+header {
+    position: relative;
+}
+
+#nav-bar input[type=text] {
+    width: 300px;
+    height: 2em;
+    margin: 0 15px;
+    border-radius: 5px;
+    border-style: none;
+    text-align: center;
+    background-color: var(--color-fontGray);
+}
+
+#nav-bar {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+#nav-bar>ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.5vh 2.0vw;
+}
+
+#nav-bar>ul>li {
+    margin: 0 1.2vw;
+}
+
+#nav-bar ul li a,
+#nav-bar form span {
+    color: var(--color-fontGray);
+    font-weight: 600;
+}
+
+#nav-bar ul li i,
+#nav-bar form i {
+    margin: 0.4vw;
+    color: var(--color-brown);
+}
+
+#nav-bar button {
+    background: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+
+/* Slider styles */
+
+
+/* ----------------------------------------------- */
+
+
+/* Method 1 */
+
+#bg-slider img {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.6;
+}
+
+#bg-slider {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-brown);
+}
+
+#bg-slider figure {
+    position: inherit;
+    width: 600%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#bg-slider figure img {
+    width: 16.6667%;
+    float: left;
+}
+
+@keyframes slider {
+    0% {
+        left: 0%;
+    }
+    16.6667% {
+        left: 0%
+    }
+    20% {
+        left: -100%;
+    }
+    36.6667% {
+        left: -100%;
+    }
+    40% {
+        left: -200%;
+    }
+    56.6667% {
+        left: -200%;
+    }
+    60% {
+        left: -300%;
+    }
+    76.6667% {
+        left: -300%;
+    }
+    80% {
+        left: -400%;
+    }
+    96.6667% {
+        left: -400%;
+    }
+    100% {
+        left: -500%;
+    }
+}
+
+
+/* Method 2 */
+
+
+/* Text on slider */
+
+
+/* Footer Styles */
+
+
+/* ---------------------------------------------- */
+
+footer {
+    position: relative;
+    bottom: 0;
+    background: var(--color-brown);
+    color: var(--color-grayish);
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+#social-media {
+    display: flex;
+    margin: 2vh;
+}
+
+.insta-icon,
+.fb-icon,
+.yt-icon,
+.in-icon,
+.tw-icon {
+    margin: 2.5vh 1vw;
+    border: 1px solid #eee;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#social-media>div:hover {
+    box-shadow: 1.5px 2px 2px 1px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1, 1.1) rotate(360deg);
+    transition: transform 350ms ease-in-out;
+    border: none;
+}
+
+#social-media a {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-gray);
+}
+
+#social-media a:hover {
+    color: var(--color-fontGray);
+    cursor: pointer;
+}
+
+.insta-icon:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.fb-icon:hover {
+    background: #3B5998;
+}
+
+.yt-icon:hover {
+    background: #bb0000;
+}
+
+.in-icon:hover {
+    background: #0077b5;
+}
+
+.tw-icon:hover {
+    background: #55ACEE;
+}
+
+#policy {
+    position: relative;
+}
+
+#policy>ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 95vw;
+    margin: 0 0 2vw 0;
+}
+
+#policy>span {
+    position: absolute;
+    margin-left: 9vw;
+}
+
+#policy>ul>li {
+    margin: 0 1vw;
+}
+
+#policy a {
+    color: var(--color-fontGray);
+    font-weight: 600;
+}
