@@ -1,3 +1,15 @@
+:root {
+    --color-yellow: rgb(234, 195, 15);
+    --color-gray: rgb(80, 98, 99);
+    --color-white: rgb(255, 254, 255);
+    --color-grayish: rgb(219, 217, 211);
+    --color-brown: rgb(72, 52, 38);
+    --color-fontBlack: rgb(56, 55, 52);
+    --color-fontGray: rgb(196, 193, 194);
+    --color-yellowShade: rgb(190, 140, 50);
+    background-image: url(../images/backdrop.jpg);
+}
+
 footer {
     width: 100vw;
     position: fixed;

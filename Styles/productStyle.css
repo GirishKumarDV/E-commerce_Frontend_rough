@@ -1,17 +1,73 @@
-main img {
-    width: 350px;
-    height: 300px;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-}
-
-#clothing,
-#shoes,
-#electronics {
-    display: flex;
-    margin: 50px;
-    justify-content: space-around;
-}
+              :root {
+                 --color-yellow: rgb(234, 195, 15);
+                 --color-gray: rgb(80, 98, 99);
+                 --color-white: rgb(255, 254, 255);
+                 --color-grayish: rgb(219, 217, 211);
+                 --color-brown: rgb(72, 52, 38);
+                 --color-fontBlack: rgb(56, 55, 52);
+                 --color-fontGray: rgb(196, 193, 194);
+                 --color-yellowShade: rgb(190, 140, 50);
+                 background-image: url(../images/backdrop.jpg);
+             }
+             
+             header {
+                 background-color: var(--color-yellowShade);
+             }
+             
+             main img {
+                 width: 350px;
+                 height: 300px;
+                 border-radius: 5px;
+             }
+             
+             main {
+                 display: flex;
+                 flex-direction: column;
+             }
+             
+             #clothing,
+             #shoes,
+             #electronics {
+                 display: flex;
+                 flex-direction: column;
+                 background-color: rgba(45, 45, 45, 0.1);
+                 align-items: center;
+                 margin-top: 10vh;
+                 padding: 1em;
+             }
+             
+             #container {
+                 width: 95vw;
+                 display: flex;
+                 justify-content: space-around;
+                 margin: 1vh;
+             }
+             
+             .product {
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+             }
+             
+             .product-img {
+                 background-color: var(--color-yellowShade);
+                 padding: 10px;
+                 border-radius: 10px 0 10px 0;
+                 text-align: center;
+             }
+             
+             .price {
+                 background-color: var(--color-fontGray);
+                 width: 100px;
+                 margin-top: 1vh;
+                 height: 30px;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 border-radius: 4px;
+                 font-weight: 600;
+             }
+             
+             .price:hover {
+                 color: green;
+             }
